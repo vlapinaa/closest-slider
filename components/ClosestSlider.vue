@@ -93,11 +93,21 @@ const scrollToLeft = () => {
 .slider__container {
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 240px;
     flex-shrink: 0;
     overflow-x: auto;
     scrollbar-width: none;
-    margin: 0px 46px;
+    margin: 0px 16px;
+
+    @media screen and (min-width: 640px) {
+        width: 380px;
+        margin: 0px 32px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        width: 580px;
+        margin: 0px 46px;
+    }
 }
 
 .slider__line {
@@ -105,19 +115,45 @@ const scrollToLeft = () => {
 }
 
 .slider__line:not(:last-of-type) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 640px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        margin-bottom: 20px;
+    }
 }
 
 .slider__item {
-    font-size: 30px;
-    padding: 8px 16px;
+    font-size: 12px;
+    padding: 4px 8px;
     flex-shrink: 0;
     background-color: white;
     border-radius: 20px;
+
+    @media screen and (min-width: 640px) {
+        font-size: 22px;
+        padding: 6px 12px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        font-size: 30px;
+        padding: 8px 16px;
+    }
 }
 
 .slider__item:not(:last-of-type) {
-    margin-right: 12px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 640px) {
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        margin-right: 12px;
+    }
 }
 
 .slider__item:hover {
@@ -128,9 +164,19 @@ const scrollToLeft = () => {
     background-color: white;
     box-shadow: none;
     border: 0;
-    font-size: 30px;
-    padding: 8px 22px;
+    font-size: 12px;
+    padding: 4px 12px;
     border-radius: 20px;
+
+    @media screen and (min-width: 640px) {
+        font-size: 22px;
+        padding: 6px 18px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        font-size: 30px;
+        padding: 8px 22px;
+    }
 }
 
 .slider__btn:hover {
