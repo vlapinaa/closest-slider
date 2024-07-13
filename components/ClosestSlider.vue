@@ -121,7 +121,6 @@ const scrollToLeft = () => {
 }
 
 .slider__item:hover {
-
     background-color: #bb8add;
 }
 
@@ -132,7 +131,6 @@ const scrollToLeft = () => {
     font-size: 30px;
     padding: 8px 22px;
     border-radius: 20px;
-
 }
 
 .slider__btn:hover {
